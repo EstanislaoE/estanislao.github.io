@@ -6,7 +6,12 @@
 
         <a-scene embedded arjs='sourceType: webcam;'>
             <a-sphere src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="2" segments.height="4" >
-
+                <a-animation attribute="rotation"
+                    dur="10000"
+                    to="0 360 0"
+                    ease="linear"
+                    repeat="indefinite"> 
+                </a-animation>
              </a-sphere>
             <a-marker-camera preset='hiro'></a-marker-camera>
         </a-scene>
